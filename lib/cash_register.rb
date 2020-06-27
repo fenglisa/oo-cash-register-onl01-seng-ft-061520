@@ -31,6 +31,5 @@ class CashRegister
     self.array
   end
   
-  binding.pry
-  puts "bye"
+  
 end
