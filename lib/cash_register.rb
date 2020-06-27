@@ -25,7 +25,7 @@ class CashRegister
   end
   
   def items
-    @@items << item
+    @@items << self.add_item.item
     @@items
   end
   
