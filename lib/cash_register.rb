@@ -9,9 +9,9 @@ class CashRegister
   end
   
   def add_item(title, price, quantity = 1)
-    array = []
+    @array = []
     quantity.times do
-      array << title
+      @array << title
     end
     self.total += quantity*price
   end
@@ -27,7 +27,7 @@ class CashRegister
   end
   
   def items
-    array
+    self.array
   end
   
   binding.pry
