@@ -8,9 +8,7 @@ class CashRegister
     @discount = discount
   end
   
-  def add_item(item, price, quantity = 1)
-    @array = []
-    @array << item
+  def add_item(title, price, quantity = 1)
     self.total += quantity*price
   end
   
@@ -25,7 +23,7 @@ class CashRegister
   end
   
   def items
-    self.array
+    
   end
   
 end
